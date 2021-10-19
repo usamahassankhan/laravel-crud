@@ -29,4 +29,4 @@ Route::get('/store',[Simplecrud::class,'store']);
 });
 Route::get('/home',function(){
   return view('home');
-});
+})->middleware("uc");
