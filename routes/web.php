@@ -24,3 +24,9 @@ Route::get('/store',[Simplecrud::class,'store']);
  Route::get('/adddata',function(){
      return view('simplecrud.create');
  });
+ Route::get('/noaccess',function(){
+  return view('noaccess');
+});
+Route::get('/home',function(){
+  return view('home');
+});
