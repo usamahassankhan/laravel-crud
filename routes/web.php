@@ -30,3 +30,6 @@ Route::get('/store',[Simplecrud::class,'store']);
 Route::get('/home',function(){
   return view('home');
 })->middleware("uc");
+Route::get('/home1',function(){
+  return view('hom1');
+})->middleware("gm");
